@@ -1,0 +1,703 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>카카오톡 오픈채팅방 규정</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="cdadb398-1020-433a-8487-a35dc7a21dee" class="page sans"><header>
+	<ins class="kakao_ad_area" style="display:none;"
+	data-ad-unit = "DAN-TNGywJKMwR1RiZ4R"
+	data-ad-width = "320"
+	data-ad-height = "100"></ins>
+	<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<h1 class="page-title">카카오톡 오픈채팅방 규정</h1></header><div class="page-body"><p id="618e9700-29a6-471d-a8d3-7ac55088137f" class="">
+</p><p id="3d841acb-02b2-4611-bf47-0acc52b97f84" class="">
+</p><ul id="46e96ed0-e4b4-47f6-83d7-87ce2c4b6f47" class="bulleted-list"><li style="list-style-type:disc">본 카카오톡 오픈채팅방 ‘데브로봇스 커뮤니티’ (이하, ‘데브로봇스 오픈채팅방’)에서는 ‘대한민국 법령’과 ‘카카오톡 이용약관’, ‘카카오톡 오픈채팅방 규정’을 준수하여야 합니다.</li></ul><ul id="3139f67a-b5b1-4b9f-90e0-311c0cc3666e" class="bulleted-list"><li style="list-style-type:disc">본 ‘카카오톡 오픈채팅방 규정’에는 ‘카카오톡 이용약관’의 내용의 일부가 포함되어 있습니다.</li></ul><ul id="e82aa7c7-3d80-4fef-9a7e-28331e86d329" class="bulleted-list"><li style="list-style-type:disc">본 ‘오픈채팅방 규정’ 미숙지로 인한 모든 책임은 당사자에게 있으며, 데브로봇스 오픈채팅방 방장 및 부방장(이하, ‘운영진’)이 책임지지 아니합니다.</li></ul><p id="8d8c649d-f4ff-4ac9-bb5d-d0fafad14e6b" class="">
+	<ins class="kakao_ad_area" style="display:none;"
+	data-ad-unit = "DAN-jWHR0vWND6jZj9cz"
+	data-ad-width = "320"
+	data-ad-height = "100"></ins>
+	<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</p><h1 id="d612a41a-0162-416c-b7cc-b4a406f4ae7f" class="">데브로봇스 오픈채팅방 규정</h1><p id="e8b6d37b-a522-459a-a096-e537787a3a0d" class="">시행일자 : 2022년 12월 05일</p><p id="fa787a3a-e6ee-4a0c-ba4f-7ba075e0b6a8" class="">
+</p><h2 id="1adca3a1-ff04-496b-8da2-2247d2212a97" class="">0. 경고제</h2><p id="d2c45380-45b4-485e-9e3b-72daa4d30967" class="">본 데브로봇스 오픈채팅방에서는 <mark class="highlight-orange_background">‘경고제’를 실시</mark>하고 있습니다.</p><p id="1a758e70-8ed1-40e5-8ded-5785ae9aeb81" class=""><mark class="highlight-orange_background">경고 6회 누적시 영구 강제탈퇴</mark>가 진행되며, <mark class="highlight-orange_background">누적 경고는 3개월마다 초기화</mark> 됩니다.</p><p id="68a9f6ff-6be3-41ed-a734-cbd0a4088c03" class="">
+</p><h2 id="21ea1443-e158-4ad5-9f7b-edc7e6f72edc" class="">1. 멤버</h2><ul id="e95c5a56-4e31-4764-abfc-6601c95632b6" class="bulleted-list"><li style="list-style-type:disc">카카오프렌즈 프로필 기본 닉네임(ex. 벌 서는 라이언, 화나서 방방 뛰는 튜브) 금지 [채팅 입력시 기준]</li></ul><h2 id="4e0b4a74-28a6-4a63-804f-3351032d803a" class="">2. 봇 [경고 1회 및 강제퇴장]</h2><ul id="a4929cdc-e7f9-44b3-bb9e-ac8a2350968f" class="bulleted-list"><li style="list-style-type:disc">인사봇 (DB 기반 인사봇 제외)</li></ul><ul id="9b9c1ea0-a71c-4d03-8e88-6db965f29047" class="bulleted-list"><li style="list-style-type:disc">도배봇</li></ul><ul id="67211e5f-bfd8-416f-ade8-8e8ae70bf906" class="bulleted-list"><li style="list-style-type:disc">욕설감지봇</li></ul><ul id="546994f1-1dc1-4223-9602-a2029f061d29" class="bulleted-list"><li style="list-style-type:disc">반응률이 3%를 초과하는 자동학습봇</li></ul><ul id="14c1e50e-79dd-471b-9c55-89e8c0d7f0ac" class="bulleted-list"><li style="list-style-type:disc">기타 민폐봇 작동 금지</li></ul><p id="7b146468-2e65-4998-a8b8-bf18bde38a4f" class="">
+</p><p id="ad094064-3eef-4ff0-b15b-668ff23cd6c5" class="">
+	<ins class="kakao_ad_area" style="display:none;"
+	data-ad-unit = "DAN-jWHR0vWND6jZj9cz"
+	data-ad-width = "320"
+	data-ad-height = "100"></ins>
+	<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</p><h2 id="cef772bc-8074-4a3b-a4be-dbab5270bc32" class="">3. 채팅</h2><h3 id="b31864ec-fe2f-4add-a396-9cb2b4784017" class="">3-1. 도배 [경고 1회]</h3><ul id="8fb54787-c9a2-4640-913a-e9ae399078bd" class="bulleted-list"><li style="list-style-type:disc">동일 인물이 채팅 도배(비슷하거나 똑같은 내용 연속 7회 이상) 금지</li></ul><ul id="3d3ebdcf-a9a0-441c-a788-822fe086b443" class="bulleted-list"><li style="list-style-type:disc">동일 인물이 채팅 단타(띄어쓰기 포함 5자 이하, 5회 이상) 금지</li></ul><ul id="1ef52bdb-4f07-4c2e-888f-089a6f9036d0" class="bulleted-list"><li style="list-style-type:disc">동일 인물이 이모티콘 도배(동일 이모티콘 연속 3회 이상) 금지</li></ul><ul id="4fac252d-a9be-4ded-8790-83af1d6549af" class="bulleted-list"><li style="list-style-type:disc">동일 인물이 사진 도배(일반사진 연속 4개 이상, 묶어보내기 10개 이상) 금지</li></ul><p id="6f143ca7-1fcf-4ea5-9c5a-8aa243d44e75" class="">
+</p><h3 id="e2e3d085-dce1-453a-b60c-0cdabbd64035" class="">3-2. 홍보</h3><ul id="32fc9555-6af0-493a-b604-46f4b29e078b" class="bulleted-list"><li style="list-style-type:disc">관계 법령에 따라 금지된 상품 및 서비스 홍보 금지 [신고 및 강제퇴장]</li></ul><ul id="72587401-3d31-4096-97e7-327f5c228db1" class="bulleted-list"><li style="list-style-type:disc">카카오톡 오픈채팅방, 네이버 카페 등 허가되지 않은 서비스 홍보 금지 [경고 1회]</li></ul><p id="f043fe03-d489-404b-853d-f3dda1c4e216" class="">
+</p><h3 id="f6253c80-ff12-4933-9d20-7d91f67561c8" class="">3-3. 성적 행위</h3><ul id="bbb22a36-0810-45ba-93c0-ab5d8ca72756" class="bulleted-list"><li style="list-style-type:disc">남녀(애니메이션, 피규어, 리얼돌 등 표현물 포함)의 특정 성적 부위의 노출을 표현하거나 묘사하는 이미지 및 동영상 등 파일 금지 [가리기 및 신고]</li></ul><ul id="bac062f9-6bd6-4ada-abb3-23624253147e" class="bulleted-list"><li style="list-style-type:disc">남녀(만화, 삽화, 애니메이션, 춘화, 피규어, 리얼돌 등 표현물 포함)의 특정 성적 부위의 노출을 표현하거나 묘사하는 텍스트 금지 [가리기 및 신고]</li></ul><ul id="60a58d40-7094-4e91-9810-b882fbb8d8af" class="bulleted-list"><li style="list-style-type:disc">아동 · 청소년(애니메이션, 피규어 등 표현물 포함) 관련 성적 채팅 금지 [신고 및 영구 강제퇴장]</li></ul><p id="faa0251c-1e52-42c4-97d7-9ce30110965d" class="">
+</p><h3 id="7fb6804f-047f-4cc9-a514-c547b3b5c35f" class="">3-4. 기타 [경고 1회]</h3><ul id="b7268ac6-823e-4daa-999b-3b939ddb5a49" class="bulleted-list"><li style="list-style-type:disc">로코 프로토콜/쉐어 카카오/노드 카카오 등 법적 문제가 발생할 수 있는 수단에 대해 언급 금지(질문 및 답변 제외)</li></ul><ul id="b8ca5efd-5f0e-4b38-9414-ef0bf0831aee" class="bulleted-list"><li style="list-style-type:disc">상대방을 비하하거나 타인에게 모욕감을 줄 수 있는 욕설 · 비속어 금지</li></ul><ul id="dec5a748-3c72-4a64-bbd3-7ec85426ae59" class="bulleted-list"><li style="list-style-type:disc">타인에게 불쾌감 및 혐오감을 줄 수 있는 행위 금지</li></ul><ul id="37122289-e309-4c54-bbd6-db9bc11d30e1" class="bulleted-list"><li style="list-style-type:disc">타인에게 챗봇 관련 소스 및 금전을 요구하는 행위 금지(개발의뢰 제외)</li></ul><p id="102fb9ef-0d83-46db-b448-a80f86cf245c" class="">
+</p><p id="2872c907-da89-4d09-b366-9e998d2b2a19" class="">
+</p><h2 id="47142726-1069-4fe9-9e80-2ea6f8edeb4e" class="">4. 기타</h2><ul id="e2fda978-2b6b-4393-a641-c9ff56dfcbf0" class="bulleted-list"><li style="list-style-type:disc">공지 게시글의 댓글 란은 경고 제도 관리 목적으로 사용되니, 일반 멤버는 작성을 금지합니다.</li></ul><ul id="b9e175eb-e3fd-41d1-a62c-f5dce6229999" class="bulleted-list"><li style="list-style-type:disc">본 규정과 별개로, 운영진 판단에 따라 경고, 강제퇴장, 영구 강제퇴장 등의 조치가 이루어질 수 있습니다.</li></ul><ul id="62ac1cdc-7839-4de7-9e6e-6ba84f5cbca2" class="bulleted-list"><li style="list-style-type:disc">본 데브로봇스 오픈채팅방 관련 운영진 판단에 대한 이의제기는 <a href="https://open.kakao.com/o/gPIohD9d">통합민원실</a>을 이용해주세요.</li></ul><p id="6e1b8e48-1ef4-4b85-b5c0-df5ea2ee1dde" class="">
+	<ins class="kakao_ad_area" style="display:none;"
+	data-ad-unit = "DAN-Zfg6Cz8Ahib1VY3n"
+	data-ad-width = "320"
+	data-ad-height = "100"></ins>
+	<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</p></div></article></body></html>
